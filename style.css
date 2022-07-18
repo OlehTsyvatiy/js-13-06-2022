@@ -63,6 +63,7 @@ header {
 
 #page aside {
 width: 20%;
+
 }
 
 #page main {
@@ -81,7 +82,19 @@ width: 20%;
 
 
 
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.product {
+    width: 30%;
+    border: 1px solid;
+    margin-bottom: 13px;
+    text-align: center;
+    padding: 15px;
+}
 
 
 
@@ -89,16 +102,15 @@ width: 20%;
 @media(max-width: 732px) {
     header {
         flex-direction: column;
-        align-items: center;
     }
 
     header img {
         margin-: 0 0 15px 0;
     }
 
-    #menu-nav {
+    #menu-nav,
+    #page {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
-}
- 
